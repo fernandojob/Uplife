@@ -1,0 +1,135 @@
+.icon{
+    font-size: 24px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.oculto{
+    color: transparent;
+}
+
+.espaco{
+    padding: 20px;
+}
+
+.main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.sessao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.tituloSessao{
+    text-align: center;
+    padding: 20px;
+}
+
+.opcao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.tituloOpcao{
+    text-align: center;
+    padding: 20px;
+}
+
+.conteudoOpcao{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pausaAutomatica{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.subTitulo{
+    padding: 20px;
+}
+
+.comentarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comentarios ion-toggle{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.tipoVoz ion-radio{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+#medicao ion-select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0 15px 0 15px;
+    color: black;
+    font-size: 14px;
+    width: 50%;
+}
+
+#teste{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+}
+
+#salvar{
+    width: 100%;
+}

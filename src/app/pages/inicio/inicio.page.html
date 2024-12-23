@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-item>
+    
+  <ion-button fill="clear" class="icon" (click)="IrparaConfig()">
+    <ion-avatar>
+      <img alt="Foto de perfil" [src]="fotoperfil" />
+    </ion-avatar>
+  </ion-button>
+  
+  <ion-title class="titulo">Início</ion-title>
+
+  <ion-button fill="clear" class="icon" disabled>
+    <ion-icon name="cog-sharp" class="oculto"></ion-icon>
+  </ion-button>
+
+</ion-item>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ingestão Restante</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Calorias: {{ caloriasRestantes | number:'1.0-0' }} kcal<br /> <!-- Nova linha para calorias -->
+      Proteínas: {{ proteinasRestantes | number:'1.0-0' }} g<br />
+      Gorduras: {{ gordurasRestantes | number:'1.0-0' }} g<br />
+      Carboidratos: {{ carboidratosRestantes | number:'1.0-0' }} g
+    </ion-card-content>
+  
+    <ion-button fill="clear" (click)="irParaAdicionar()">Adicionar</ion-button>
+    <ion-button fill="clear" (click)="irParaHistorico()">Histórico</ion-button>
+  </ion-card>
+  
+
+<ion-card *ngIf="corrida">
+  <ion-card-header>
+    <ion-card-title>Última Corrida</ion-card-title>
+  </ion-card-header>
+  <ion-accordion-group expand="inset">
+    <ion-accordion>
+      <ion-item slot="header" color="light">
+        <ion-label>{{ corrida.dia }} - {{ corrida.hora }}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <div class="teste">
+          <div class="lado">
+            <ion-title>{{ corrida.distancia }}</ion-title>
+            <ion-title>Quilômetros</ion-title>
+          </div>
+          <div class="lado">
+            <ion-title>{{ corrida.duracao }}</ion-title>
+            <ion-title>Duração</ion-title>
+          </div>
+          <div class="lado">
+            <ion-title>{{ corrida.paceMedio }}</ion-title>
+            <ion-title>Pace médio</ion-title>
+          </div>
+          <div class="lado">
+            <ion-title>{{ corrida.calorias }}</ion-title>
+            <ion-title>Calorias</ion-title>
+          </div>
+        </div>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+  <ion-button fill="clear" (click)="irParaCorrida()">Treinar</ion-button>
+  <ion-button fill="clear" (click)="irParaHistoricoCorrida()">Histórico</ion-button>
+</ion-card>
+</ion-content>

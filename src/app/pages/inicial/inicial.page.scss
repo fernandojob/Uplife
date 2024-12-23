@@ -1,0 +1,35 @@
+.main{
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+}
+
+.image ion-img{
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+.image ion-title{
+    font-size: 30px;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}

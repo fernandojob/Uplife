@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-item>
+    
+    <ion-button fill="clear" class="icon" (click)="Voltarpagina()">
+      <ion-icon name="arrow-back-sharp"></ion-icon>
+    </ion-button>
+    
+    <ion-title class="titulo">Registro</ion-title>
+
+    <ion-button fill="clear" class="icon" disabled>
+      <ion-icon name="add-sharp" class="oculto"></ion-icon>
+    </ion-button>
+
+  </ion-item>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid class="main">
+
+    <form class="formulario" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+      <ion-col>
+        <ion-title class="titulo">Email</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-input type="email" fill="outline" formControlName="email" placeholder="Seu email"></ion-input>
+
+        <ion-label *ngIf="userForm.controls['email'].invalid && (userForm.controls['email'].dirty || userForm.controls['email'].touched)">
+          <p class="erro" *ngIf="userForm.controls['email'].errors?.['required']">Email é obrigatório.</p>
+          <p class="erro" *ngIf="userForm.controls['email'].errors?.['email']">Email inválido.</p>
+        </ion-label>
+
+        <ion-label *ngIf="emailErro">
+          <p class="erro" *ngIf="emailErro">{{ emailErro }}</p>
+        </ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-title class="titulo">Nome de Usuário</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-input type="text" fill="outline" formControlName="nome" placeholder="Nome de Usuário"></ion-input>
+
+        <ion-label *ngIf="userForm.controls['nome'].invalid && (userForm.controls['nome'].dirty || userForm.controls['nome'].touched)">
+          <p class="erro" *ngIf="userForm.controls['nome'].errors?.['required']">Nome é obrigatório.</p>
+          <p class="erro" *ngIf="userForm.controls['nome'].errors?.['minlength']">Nome deve ter pelo menos 5 caracteres.</p>
+          <p class="erro" *ngIf="userForm.controls['nome'].errors?.['nomeInvalido']">Nome deve conter pelo menos 5 caracteres alfabéticos.</p>
+        </ion-label>
+
+      </ion-col>
+
+      <ion-col>
+        <ion-title class="titulo">Senha</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-input type="password" fill="outline" formControlName="senha" placeholder="Senha">
+          <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+        </ion-input>
+
+        <ion-label *ngIf="userForm.controls['senha'].invalid && (userForm.controls['senha'].dirty || userForm.controls['senha'].touched)">
+          <p class="erro" *ngIf="userForm.controls['senha'].errors?.['required']">Senha é obrigatória.</p>
+          <p class="erro" *ngIf="userForm.controls['senha'].errors?.['minlength']">Senha deve ter pelo menos 8 caracteres.</p>
+        </ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-title class="titulo">Confirmar Senha</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-input type="password" fill="outline" formControlName="confirmarSenha" placeholder="Confirmar Senha">
+          <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+        </ion-input>
+
+        <ion-label *ngIf="userForm.controls['confirmarSenha'].invalid && (userForm.controls['confirmarSenha'].dirty || userForm.controls['confirmarSenha'].touched)">
+          <p class="erro" *ngIf="userForm.controls['confirmarSenha'].errors?.['verificarSenha']">Senha e confirmar senha devem ser iguais.</p>
+        </ion-label>
+      </ion-col>
+
+      <ion-col class="botoes">
+        <ion-button type="submit">Próximo</ion-button>
+        <ion-button (click)="irParaLogin()">Já possui Conta? Entre Agora</ion-button>
+      </ion-col>
+    </form>
+    
+  </ion-grid>
+  
+</ion-content>

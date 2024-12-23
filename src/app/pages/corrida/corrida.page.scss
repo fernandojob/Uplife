@@ -1,0 +1,174 @@
+.icon{
+    font-size: 24px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.oculto{
+    color: transparent;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.config{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.iniciar{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.tenis{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#tenis, #configuracoes{
+    font-size: 15px;
+    background-color: #4782EB;
+    border-radius: 40px;
+    color: black;
+}
+
+#iniciar{
+    padding: 10px;
+    border-radius: 40px;
+    background-color: #4782EB;
+    color: black;
+}
+
+#map {
+    height: 80%;
+    width: 100%;
+}
+
+.treino-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.treino-lado{
+    width: auto;
+}
+
+.valor{
+    font-size: 38px;
+}
+
+.descricao{
+    font-size: 16px;
+}
+
+.divisor{
+    border: 1px solid #cccccc80;
+    width: 95%;
+}
+
+.treino-linha{
+    width: 100%;
+}
+
+.txtMaior{
+    font-size: 80px;
+}
+
+.treino-botoes{
+    width: 100%;
+}
+
+.divisor-vertical{
+    border-right: 1px solid #cccccc80;
+    height: 10px;
+}
+
+.img-rota{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.pause-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.pause-lado{
+    width: 49%;
+    margin-bottom: 10px;
+}
+
+.pause-botoes{
+    width: 49%;
+}
+
+.pause-botoes ion-button{
+    font-size: 20px;
+}
+
+.pauseValor{
+    font-size: 40px;
+}
+
+.pauseDescricao{
+    font-size: 16px;
+}
+
+.confirmarModal{
+    --height: 25%;
+    --border-radius: 20px;
+    width: auto;
+    padding: 0 20px 0 20px;
+}
+
+.confirmarButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 5px 20px 5px;
+}
+
+.lado{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lado ion-button{
+    width: 100%;
+}

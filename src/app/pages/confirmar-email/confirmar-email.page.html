@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-item>
+    <ion-title class="titulo">Confirmar E-mail</ion-title>
+  </ion-item>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-grid   class="main">
+    <ion-row>
+      <ion-col>
+          <ion-title class="titulo">Verifique seu e-mail</ion-title>
+          <p class="texto"> Um e-mail de verificação foi enviado para o seu endereço de e-mail. Por favor, verifique sua caixa de entrada e siga as instruções para confirmar seu e-mail.</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-spinner *ngIf="isChecking"></ion-spinner>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,151 @@
+.icon ion-avatar{
+    width: 40px;
+    height: 40px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.oculto{
+    color: transparent;
+}
+
+.tituloExercicio{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.barra-topo{
+    margin-bottom: 10px;
+}
+
+.cardTituloExercicio{
+    margin: 0px;
+
+}
+
+// .cardExercicios{
+    
+// }
+
+// ion-item {
+//     --padding-start: 0;
+//   }
+
+.iconeExercicio {
+    border-radius: 15px ;
+}
+
+ion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ion-label {
+    flex: 1;
+}
+
+.arrow {
+    color: #ffffff;
+}
+
+// .modal {
+//     // display: flex;
+//     // position: absolute;
+// }
+
+// .blocoArredondado{
+//     width: 100%;         /* Largura do bloco */
+//     height: 100%;        /* Altura do bloco */
+//     background-color: black; /* Cor de fundo do bloco */
+//     border-radius: 20px 20px 0 0; /* Arredondamento dos cantos */
+//     z-index: 1;
+// }
+
+.modal-content {
+    --background: transparent;
+}
+
+.modal-inner {
+    position: relative;
+    height: 100%;
+    // font-family: Ubuntu;
+}
+
+.background-image {
+    width: 100%;
+    height: 200px; /* Ajuste conforme necessário */
+    object-fit: cover;
+}
+
+.bloco-preto {
+    position: absolute;
+    top: 150px; /* Ajuste conforme necessário */
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 20px 20px 0 0; /* Arredonda apenas os cantos superiores */
+}
+
+.conteudo {
+    margin-top: 50px; /* Ajuste conforme necessário */
+}
+
+.conteudo h2 {
+    margin-top: -50px;
+    font-weight: bold;
+}
+
+.detalhes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.detalhe p {
+    margin: 5px 0;
+}
+
+.imagem-exercicio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.imagem-exercicio img {
+    max-width: 100%;
+    height: auto;
+}
+
+.instrucoes p {
+    margin: 10px 0;
+}
+
+.titulo-e-fechar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adicionado para espalhar os itens */
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+
+.titulo-e-fechar h2 {
+    flex: 1; /* Permite que o título use o espaço restante */
+    margin: 0; /* Remove margens extras */
+}
+
+.botao-fechar {
+    font-size: 45px; /* Tamanho do ícone */
+    color: white; /* Cor do ícone */
+    margin-left: auto; /* Empurra o ícone para o lado direito */
+    cursor: pointer; /* Mostra que é um botão clicável */
+}
+
+.tituloPanturrilhas{
+    font-weight: bold;
+}
+

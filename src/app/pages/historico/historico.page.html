@@ -1,0 +1,71 @@
+<ion-content>
+
+  <ion-grid class="main">
+    
+    <ion-col class="mensagem" *ngIf="corridas.length === 0">
+      <ion-title>Nada por enquanto</ion-title>
+      <ion-title>Experimente correr!</ion-title>
+    </ion-col>
+
+    <ion-col class="historico">
+      <ion-accordion-group expand="inset">
+
+        <ion-accordion *ngFor="let corrida of corridas" [value]="corrida.corrida_id">
+          <ion-item slot="header" color="light">
+            <ion-label>{{ corrida.dia }} - {{ corrida.hora }}</ion-label>
+          </ion-item>
+
+          <div class="ion-padding" slot="content">
+            <div class="teste">
+              <div class="lado">
+                <ion-title>{{ corrida.distancia }}</ion-title>
+                <ion-title>Quilômetros</ion-title>
+              </div>
+      
+              <div class="lado">
+                <ion-title>{{ corrida.duracao }}</ion-title>
+                <ion-title>Duração</ion-title>
+              </div>
+      
+              <div class="lado">
+                <ion-title>{{ corrida.ritmoMedio }}</ion-title>
+                <ion-title>Ritmo médio</ion-title>
+              </div>
+      
+              <div class="lado">
+                <ion-title>{{ corrida.calorias }}</ion-title>
+                <ion-title>Calorias</ion-title>
+              </div>
+
+              <ion-button (click)="confirmarExclusao(corrida.corrida_id)">Excluir</ion-button>
+            </div>
+          </div>
+        </ion-accordion>
+        
+      </ion-accordion-group>
+  
+    </ion-col>
+  
+  </ion-grid>
+
+  <ion-modal class="confirmarModal" [isOpen]="confirmarModal">
+    <ng-template>
+      <ion-header>
+        <ion-item>
+          <ion-title class="titulo">Deseja excluir?</ion-title>
+        </ion-item>
+      </ion-header>
+      <ion-content>
+        <ion-grid class="confirmarButton">
+          <div class="ladoModal">
+            <ion-button (click)="excluirCorrida()">Sim</ion-button>
+          </div>
+          <div class="ladoModal">
+            <ion-button (click)="fecharModal()">Não</ion-button>
+          </div>
+        </ion-grid>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+  
+</ion-content>

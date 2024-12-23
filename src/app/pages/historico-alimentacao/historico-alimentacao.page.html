@@ -1,0 +1,63 @@
+<ion-content>
+  <!-- Repetição para cada data de alimentos -->
+  <ion-accordion-group expand="inset">
+    <ion-accordion *ngFor="let data of datas">
+      <ion-item slot="header" color="light">
+        <ion-thumbnail slot="start">
+          <ion-icon name="calendar" class="calendar-icon"></ion-icon>
+        </ion-thumbnail>
+        <ion-label><p>{{ alimentosPorData[data].data | date:'mediumDate' }}</p></ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <!-- Repetição para cada tipo de refeição dentro da data -->
+        <ion-accordion-group expand="inset">
+          <ion-accordion *ngFor="let tipoRefeicao of ['Café Da Manhã', 'Almoço', 'Jantar', 'Lanches/Outros']">
+            <ion-item slot="header" color="light">
+              <ion-thumbnail slot="start">
+                <ion-icon [name]="getIconForRefeicao(tipoRefeicao).name" 
+                          [class]="getIconForRefeicao(tipoRefeicao).cssClass"></ion-icon>
+              </ion-thumbnail>
+              <ion-label>{{ tipoRefeicao }}</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content" id="content-{{ getFormattedId(tipoRefeicao) }}">
+              <ion-list>
+                <ion-item *ngFor="let alimento of alimentosPorData[data].alimentosPorRefeicao[tipoRefeicao]">
+                  <ion-label>
+                    <h2>{{ alimento.descricao }}</h2>
+                    <p>{{ alimento.dataHora | date:'medium' }}</p>
+                    <p>Calorias: {{ alimento.energia_kcal }} kcal</p>
+                    <p>Carboidratos: {{ alimento.carboidrato_g }} g</p>
+                    <p>Proteínas: {{ alimento.proteina_g }} g</p>
+                    <p>Gorduras: {{ alimento.gordura_g }} g</p>
+                  </ion-label>
+                </ion-item>
+              </ion-list>
+            </div>
+          </ion-accordion>
+        </ion-accordion-group>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <!-- Repetição para cada data de consumo de água -->
+  <ion-accordion-group expand="inset">
+    <ion-accordion *ngFor="let data of datasAgua">
+      <ion-item slot="header" color="light">
+        <ion-thumbnail slot="start">
+          <ion-icon name="water" class="water-icon"></ion-icon>
+        </ion-thumbnail>
+        <ion-label><p>{{ aguaPorData[data].data | date: 'mediumDate' }}</p></ion-label>
+        <ion-label>{{ getTotalAgua(aguaPorData[data].consumo) }} ml consumidos</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-list>
+          <ion-item *ngFor="let consumo of aguaPorData[data].consumo">
+            <ion-label>
+              <p>{{ consumo.quantidade_ml }} ml às {{ consumo.dataHora | date: 'shortTime' }}</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>

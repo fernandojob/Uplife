@@ -1,0 +1,104 @@
+.icon{
+    font-size: 24px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.oculto{
+    color: transparent;
+}
+
+.distancia{
+    font-size: 14px;
+}
+
+.tenis{
+    background-color: #ccc;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.ion-padding{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center ;
+    justify-content: center;
+}
+
+.main{
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.formulario ion-item{
+    margin-bottom: 10px;
+}
+
+.formulario ion-col{
+    margin-bottom: 10px;
+}
+
+#seletor{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoes ion-button{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.erro{
+    color: red;
+}
+
+.confirmarModal{
+    --height: 25%;
+    --border-radius: 20px;
+    width: auto;
+    padding: 0 20px 0 20px;
+}
+
+.confirmarButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 5px 20px 5px;
+}
+
+.ladoModal{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ladoModal ion-button{
+    width: 100%;
+}

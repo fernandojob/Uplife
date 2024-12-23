@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">UpLife</string>
+    <string name="title_activity_main">UpLife</string>
+    <string name="package_name">up.uplife.starter</string>
+    <string name="custom_url_scheme">up.uplife.starter</string>
+</resources>

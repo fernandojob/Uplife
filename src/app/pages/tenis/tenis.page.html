@@ -1,0 +1,177 @@
+<ion-header>
+  <ion-item>
+    <ion-button fill="clear" class="icon" (click)="Voltarpagina()">
+      <ion-icon name="arrow-back-sharp"></ion-icon>
+    </ion-button>
+    <ion-title class="titulo">Gerenciamento de Tênis</ion-title>
+    <ion-button fill="clear" (click)="adicionarTenis()" class="icon">
+      <ion-icon name="add-sharp"></ion-icon>
+    </ion-button>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <ion-accordion-group expand="inset" *ngIf="tenisList | async as tenis">
+    <ion-accordion *ngFor="let teni of tenis" value="{{teni.tenis_id}}">
+      <ion-item slot="header" color="light">
+        <ion-thumbnail slot="start" class="tenis">
+          <img alt="tenis" [src]="teni.foto" />
+        </ion-thumbnail>
+        <ion-label>
+          {{teni.nomeTenis}} 
+          <ion-icon *ngIf="selectedTenisId === teni.tenis_id" name="star-sharp"></ion-icon>
+        </ion-label>
+        <ion-note class="distancia">{{teni.distancia}}km - {{teni.meta}}km</ion-note>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-button (click)="usar(teni.tenis_id)">Usar</ion-button>
+        <ion-button (click)="editar(teni)">Editar</ion-button>
+        <ion-button (click)="confirmar(teni.tenis_id)">Excluir</ion-button>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <ion-accordion-group expand="inset">
+    <ion-accordion (click)="usar('null')" value="1" disabled>
+      <ion-item slot="header" color="light">
+        <ion-thumbnail slot="start" class="tenis"></ion-thumbnail>
+        <ion-label>Nenhum tênis <ion-icon *ngIf="selectedTenisId === null" name="star-sharp"></ion-icon></ion-label>
+      </ion-item>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <ion-modal [isOpen]="formModal">
+    <ng-template>
+      <ion-header>
+        <ion-item>
+          <ion-button (click)="fecharModal()" fill="clear" class="icon">
+            <ion-icon name="arrow-back-sharp"></ion-icon>
+          </ion-button>
+          <ion-title class="titulo">Novo tenis</ion-title>
+          <ion-button fill="clear" class="icon" disabled>
+            <ion-icon name="add-sharp" class="oculto"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-header>
+      <ion-content>
+        <div class="main">
+          <form class="formulario" [formGroup]="tenisForm" (ngSubmit)="salvar()">
+            <ion-col>
+              <ion-title class="titulo">Nome do tenis</ion-title>
+            </ion-col>
+            <ion-col>
+              <ion-input type="text" fill="outline" formControlName="nomeTenis" placeholder="Nome do tenis"></ion-input>
+            </ion-col>
+            <ion-col>
+              <ion-title class="titulo">Meta</ion-title>
+            </ion-col>
+            <ion-col>
+              <ion-select id="seletor" fill="outline" formControlName="meta" interface="action-sheet" placeholder="Meta de distancia" cancel-text="Cancelar">
+                <ion-select-option value="100">100 Km</ion-select-option>
+                <ion-select-option value="150">150 Km</ion-select-option>
+                <ion-select-option value="200">200 Km</ion-select-option>
+                <ion-select-option value="250">250 Km</ion-select-option>
+                <ion-select-option value="300">300 Km</ion-select-option>
+                <ion-select-option value="350">350 Km</ion-select-option>
+                <ion-select-option value="400">400 Km</ion-select-option>
+                <ion-select-option value="450">450 Km</ion-select-option>
+                <ion-select-option value="500">500 Km</ion-select-option>
+                <ion-select-option value="550">550 Km</ion-select-option>
+                <ion-select-option value="600">600 Km</ion-select-option>
+                <ion-select-option value="650">650 Km</ion-select-option>
+                <ion-select-option value="700">700 Km</ion-select-option>
+                <ion-select-option value="750">750 Km</ion-select-option>
+                <ion-select-option value="800">800 Km</ion-select-option>
+                <ion-select-option value="850">850 Km</ion-select-option>
+                <ion-select-option value="900">900 Km</ion-select-option>
+                <ion-select-option value="950">950 Km</ion-select-option>
+                <ion-select-option value="1000">1000 Km</ion-select-option>
+              </ion-select>
+            </ion-col>
+            <ion-col class="botoes">
+              <ion-button type="submit">Salvar</ion-button>
+            </ion-col>
+          </form>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal [isOpen]="editarModal">
+    <ng-template>
+      <ion-header>
+        <ion-item>
+          <ion-button (click)="fecharModal()" fill="clear" class="icon">
+            <ion-icon name="arrow-back-sharp"></ion-icon>
+          </ion-button>
+          <ion-title class="titulo">Editar tenis</ion-title>
+          <ion-button fill="clear" class="icon" disabled>
+            <ion-icon name="add-sharp" class="oculto"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-header>
+      <ion-content>
+        <div class="main">
+          <form class="formulario" [formGroup]="tenisForm" (ngSubmit)="atualizar()">
+            <ion-col>
+              <ion-title class="titulo">Nome do tenis</ion-title>
+            </ion-col>
+            <ion-col>
+              <ion-input type="text" fill="outline" formControlName="nomeTenis" placeholder="Nome do tenis"></ion-input>
+            </ion-col>
+            <ion-col>
+              <ion-title class="titulo">Meta</ion-title>
+            </ion-col>
+            <ion-col>
+              <ion-select id="seletor" fill="outline" formControlName="meta" interface="action-sheet" placeholder="Meta de distancia" cancel-text="Cancelar">
+                <ion-select-option value="100">100 Km</ion-select-option>
+                <ion-select-option value="150">150 Km</ion-select-option>
+                <ion-select-option value="200">200 Km</ion-select-option>
+                <ion-select-option value="250">250 Km</ion-select-option>
+                <ion-select-option value="300">300 Km</ion-select-option>
+                <ion-select-option value="350">350 Km</ion-select-option>
+                <ion-select-option value="400">400 Km</ion-select-option>
+                <ion-select-option value="450">450 Km</ion-select-option>
+                <ion-select-option value="500">500 Km</ion-select-option>
+                <ion-select-option value="550">550 Km</ion-select-option>
+                <ion-select-option value="600">600 Km</ion-select-option>
+                <ion-select-option value="650">650 Km</ion-select-option>
+                <ion-select-option value="700">700 Km</ion-select-option>
+                <ion-select-option value="750">750 Km</ion-select-option>
+                <ion-select-option value="800">800 Km</ion-select-option>
+                <ion-select-option value="850">850 Km</ion-select-option>
+                <ion-select-option value="900">900 Km</ion-select-option>
+                <ion-select-option value="950">950 Km</ion-select-option>
+                <ion-select-option value="1000">1000 Km</ion-select-option>
+              </ion-select>
+            </ion-col>
+            <ion-col class="botoes">
+              <ion-button type="submit">Salvar</ion-button>
+            </ion-col>
+          </form>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal class="confirmarModal" [isOpen]="confirmarModal">
+    <ng-template>
+      <ion-header>
+        <ion-item>
+          <ion-title class="titulo">Deseja excluir?</ion-title>
+        </ion-item>
+      </ion-header>
+      <ion-content>
+        <ion-grid class="confirmarButton">
+          <div class="ladoModal">
+            <ion-button (click)="excluirTenis()">Sim</ion-button>
+          </div>
+          <div class="ladoModal">
+            <ion-button (click)="fecharModal()">Não</ion-button>
+          </div>
+        </ion-grid>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+</ion-content>

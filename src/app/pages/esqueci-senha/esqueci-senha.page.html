@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-item>
+    
+    <ion-button fill="clear" class="icon" (click)="Voltarpagina()">
+      <ion-icon name="arrow-back-sharp"></ion-icon>
+    </ion-button>
+    
+    <ion-title class="titulo">Mudar senha</ion-title>
+
+    <ion-button fill="clear" class="icon" disabled>
+      <ion-icon name="add-sharp" class="oculto"></ion-icon>
+    </ion-button>
+
+  </ion-item>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid class="main">
+
+    <form class="formulario" [formGroup]="senhaForm" (ngSubmit)="onSubmit()">
+
+      <ion-col>
+        <ion-title class="titulo">Email cadastrado</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-input type="text" fill="outline" formControlName="email" placeholder="Seu email"></ion-input>
+        
+        <ion-label *ngIf="senhaForm.controls['email'].invalid && (senhaForm.controls['email'].dirty || senhaForm.controls['email'].touched)">
+          <p class="erro" *ngIf="senhaForm.controls['email'].errors?.['required']">Email é obrigatório.</p>
+        </ion-label>
+
+      </ion-col>
+
+      <ion-col class="botoes">
+        <ion-button type="submit" [disabled]="senhaForm.invalid">Enviar</ion-button>
+      </ion-col>
+    </form>
+    
+  </ion-grid>
+  
+</ion-content>

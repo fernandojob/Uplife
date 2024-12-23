@@ -1,0 +1,144 @@
+<ion-content>
+  <ion-grid id="map"></ion-grid>
+
+  <ion-grid class="botoes">
+    <ion-row class="config">
+      <ion-button id="configuracoes" fill="clear" (click)="IrparaConfigCorrida()">
+        <ion-icon slot="icon-only" name="cog-sharp"></ion-icon>
+      </ion-button>
+    </ion-row>
+
+    <ion-row class="iniciar">
+      <ion-button (click)="comecarTreino()" id="iniciar" fill="clear">
+        <ion-icon name="play-sharp"></ion-icon>
+      </ion-button>
+    </ion-row>
+
+    <ion-row class="tenis">
+      <ion-button id="tenis" fill="clear" (click)="IrparaTenis()">
+        <ion-icon slot="icon-only" name="footsteps-sharp"></ion-icon>
+      </ion-button>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-modal [isOpen]="modalTreino">
+    <ng-template>
+      <ion-content class="ion-padding">
+        <div class="treino-content">
+          <div class="treino-lado">
+            <ion-title class="valor">{{ calcularTempoDecorrido() }}</ion-title>
+            <ion-title class="descricao">Duração</ion-title>
+          </div>
+
+          <div class="divisor-vertical"></div>
+
+          <div class="treino-lado">
+            <ion-title class="valor">{{ calcularCalorias(pesoUsuario, activeTime / 3600000).toFixed(0) }}</ion-title>
+            <ion-title class="descricao">Calorias</ion-title>
+          </div>
+
+          <div class="divisor-vertical"></div>
+
+          <div class="treino-lado">
+            <ion-title class="valor">{{ calcularRitmoMedio() }}</ion-title>
+            <ion-title class="descricao">Ritmo médio</ion-title>
+          </div>
+
+          <div class="divisor"></div>
+
+          <div class="treino-linha">
+            <ion-title class="txtMaior">{{ (distance / 1000).toFixed(2) }}</ion-title>
+            <ion-title class="descricao">Quilômetros</ion-title>
+          </div>
+
+          <div class="treino-botoes">
+            <ion-button (click)="pausarTreino()" id="iniciar" fill="clear">
+              <ion-icon name="pause-sharp"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal [isOpen]="modalPause">
+    <ng-template>
+      <ion-content class="ion-padding">
+        <div class="pause-content">
+          <div class="pause-lado">
+            <ion-title class="pauseValor">{{ (distance / 1000).toFixed(2) }}</ion-title>
+            <ion-title class="pauseDescricao">Quilômetros</ion-title>
+          </div>
+
+          <div class="divisor-vertical"></div>
+
+          <div class="pause-lado">
+            <ion-title class="pauseValor">{{ calcularTempoDecorrido() }}</ion-title>
+            <ion-title class="pauseDescricao">Duração</ion-title>
+          </div>
+
+          <div class="pause-lado">
+            <ion-title class="pauseValor">{{ calcularRitmoMedio() }}</ion-title>
+            <ion-title class="pauseDescricao">Ritmo médio</ion-title>
+          </div>
+
+          <div class="divisor-vertical"></div>
+
+          <div class="pause-lado">
+            <ion-title class="pauseValor">{{ calcularCalorias(pesoUsuario, activeTime / 3600000).toFixed(0) }}</ion-title>
+            <ion-title class="pauseDescricao">Calorias</ion-title>
+          </div>
+
+          <div class="pause-botoes">
+            <ion-button (click)="pararTreino()" id="iniciar" fill="clear">
+              <ion-icon name="stop-sharp"></ion-icon>
+            </ion-button>
+          </div>
+
+          <div class="divisor-vertical"></div>
+
+          <div class="pause-botoes">
+            <ion-button (click)="retomarTreino()" id="iniciar" fill="clear">
+              <ion-icon name="play-sharp"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal [isOpen]="modalContagemRegressiva">
+    <ng-template>
+      <ion-content class="ion-padding">
+        <div class="treino-content">
+         
+          <div class="treino-linha">
+            <ion-title class="txtMaior">{{ restante }}</ion-title>
+          </div>
+
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal class="confirmarModal" [isOpen]="confirmarModal">
+    <ng-template>
+      <ion-header>
+        <ion-item>
+          <ion-title class="titulo">Deseja salvar a atividade?</ion-title>
+        </ion-item>
+      </ion-header>
+      <ion-content>
+        <ion-grid class="confirmarButton">
+          <div class="lado">
+            <ion-button (click)="salvarHistorico(true)">Sim</ion-button>
+          </div>
+          <div class="lado">
+            <ion-button (click)="salvarHistorico(false)">Não</ion-button>
+          </div>
+        </ion-grid>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>

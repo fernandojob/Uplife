@@ -1,0 +1,337 @@
+[
+    {
+        "bodypart":"antebraços",
+        "equipment":"faixa",
+        "gifUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2F0994.gif?alt=media&token=d283d8f4-c062-4769-8d09-98a915fbb8bc",
+        "imgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2F0994.jpg?alt=media&token=e9f28560-993f-4331-8573-78f087f9e2b6",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoAntebracos.jpg?alt=media&token=80015d27-55c3-4c5c-8632-ccf608d2716a",
+        "id":"0994",
+        "name":"Curvatura reversa do pulso com faixa",
+        "target":"antebraços",
+        "secondaryMuscles":[
+        "antebraço"
+        ],
+        "instructions": [
+        "Sente-se em um banco ou cadeira com os pés apoiados no chão.",
+        "Segure a faixa com uma pegada pronada, com as palmas voltadas para baixo, e enrole-a em volta dos dedos.",
+        "Descanse o antebraço nas coxas, com os pulsos pendurados para fora.",
+        "Enrole lentamente os pulsos para cima, apertando o antebraço.",
+        "Pare por um momento no topo e, em seguida, abaixe lentamente os pulsos de volta à posição inicial.",
+        "Repita pelo número desejado de repetições."
+        ]
+    },
+    {
+        "bodypart":"antebraços",
+        "equipment":"faixa",
+        "gifUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2F1016.gif?alt=media&token=3a6ba71d-3fba-459b-bc20-03d26aaaf1bd",
+        "imgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2F1016.jpeg?alt=media&token=c0f17485-ef10-4221-a7ac-eb9aac929528",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoAntebracos.jpg?alt=media&token=80015d27-55c3-4c5c-8632-ccf608d2716a",
+        "id":"1016",
+        "name":"Curvatura do pulso com faixa",
+        "target":"antebraços",
+        "secondaryMuscles":[
+            "biceps",
+            "triceps"
+        ],
+        "instructions":[
+            "Sente-se em um banco ou cadeira com os pés apoiados no chão.",
+            "Segure a faixa com as duas mãos, com as palmas voltadas para cima, e descanse os antebraços nas coxas.",
+            "Enrole lentamente os pulsos para cima, apertando os antebraços.",
+            "Pause por um momento no topo e, em seguida, abaixe lentamente os pulsos de volta à posição inicial.",
+            "Repita até o número desejado de repetições."
+        ]
+    
+    },
+    {
+            "bodyPart": "antebraços",
+            "equipment": "barra",
+            "gifUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2F1411.gif?alt=media&token=61f17021-ce12-437e-a9e7-623a432af8d1",
+            "imgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2F1411.jpg?alt=media&token=255f4240-6cfe-441a-b408-fafca2fca8df",
+            "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoAntebracos.jpg?alt=media&token=80015d27-55c3-4c5c-8632-ccf608d2716a",
+            "id": "1411",
+            "name": "flexão de punho sobre um banco",
+            "target": "antebraços",
+            "secondaryMuscles": [
+                "bíceps",
+                "braquial"
+            ],
+            "instructions": [
+                "Sente-se em um banco com os pés apoiados no chão e os antebraços descansando sobre as coxas, com as palmas das mãos voltadas para baixo.",
+                "Segure a barra com uma pegada pronada (mãos voltadas para baixo), com as mãos na largura dos ombros.",
+                "Baixe a barra em direção ao chão flexionando os punhos, mantendo os antebraços imóveis.",
+                "Pause por um momento na parte inferior, depois levante lentamente a barra de volta estendendo os punhos.",
+                "Repita para o número desejado de repetições."
+            ]
+    },
+    {
+        "bodyPart": "antebraços",
+        "equipment": "barra",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2F1412.gif?alt=media&token=71664273-f5ed-42d0-8ce5-22c49f453375",
+        "imgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2F1412.jpg?alt=media&token=de772829-51fe-4566-acf9-2e1c6a77c284",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoAntebracos.jpg?alt=media&token=80015d27-55c3-4c5c-8632-ccf608d2716a",
+        "id": "1412",
+        "name": "flexão barra com as palmas para cima",
+        "target": "antebraços",
+        "secondaryMuscles": [
+            "bíceps",
+            "ombros"
+        ],
+        "instructions": [
+            "Sente-se em um banco com os pés apoiados no chão e segure uma barra com uma pegada supinada (palmas voltadas para cima).",
+            "Descanse os antebraços no banco, permitindo que os pulsos fiquem fora da borda.",
+            "Mantendo os antebraços imóveis, exale e flexione os pulsos para cima o máximo possível.",
+            "Mantenha a posição contraída por uma breve pausa, depois inspire e abaixe lentamente a barra de volta à posição inicial.",
+            "Repita para o número desejado de repetições."
+    ]
+    
+    },
+    {
+        "bodypart": "parte inferior das pernas",
+        "equipment": "peso corporal",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2F1368.gif?alt=media&token=efe19e98-5deb-401a-85b9-2a6d017cb0da",
+        "imgUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2F1368.jpeg?alt=media&token=ec7c695c-3d60-4076-93e4-a24e78860acd",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoPanturrilha.png?alt=media&token=8a1df05d-98c6-4261-bfbb-1ce52e84471e",
+        "id": "1368",
+        "name": "círculos de tornozelo",
+        "target": "Panturrilhas",
+        "secondaryMuscles": [
+        "estabilizadores do tornozelo"
+    ],
+        "instructions":[
+            "Sente-se no chão com as pernas estendidas à sua frente.",
+            "Levante uma perna do chão e gire o tornozelo em movimentos circulares.",
+            "Execute o número desejado de círculos em uma direção e depois mude para a outra direção.",
+            "Repita com a outra perna."
+        ]
+    },
+    {
+        "bodypart": "parte inferior das pernas",
+        "equipment": "ajuda",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2F1708.gif?alt=media&token=e5d50067-5c0d-4e0f-b205-36919127858a",
+        "imgUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2F1708.jpeg?alt=media&token=627483bb-72c7-4c4a-bd3d-374e0d8de6eb",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoPanturrilha.png?alt=media&token=8a1df05d-98c6-4261-bfbb-1ce52e84471e",
+        "id": "1708",
+        "name": "alongamento auxiliado de panturrilhas deitado",
+        "target": "Panturrilhas",
+        "secondaryMuscles": [
+            "isquiotibiais"
+        ],
+        "instructions": [
+            "Deite-se de costas com as pernas estendidas.",
+            "Dobre um joelho e coloque o pé no chão.",
+            "Usando suas mãos ou uma toalha, puxe suavemente os dedos dos pés em direção ao seu corpo, sentindo um alongamento na panturrilha.",
+            "Mantenha o alongamento por 20 a 30 segundos.",
+            "Solte o alongamento e repita na outra perna."
+        ]
+    },
+    {
+        "bodypart": "parte inferior das pernas",
+        "equipment": "faixa",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2F0999.gif?alt=media&token=33e7c81f-6f95-42e7-832e-47ba5dd9d8cf",
+        "imgUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2F0999.jpeg?alt=media&token=34c95c6c-4a4b-4eb0-a9fd-f25d706b8d64",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoPanturrilha.png?alt=media&token=8a1df05d-98c6-4261-bfbb-1ce52e84471e",
+        "id": "0999",
+        "name": "levantamento de panturrilha com faixa em uma perna",
+        "target": "Panturrilhas",
+        "secondaryMuscles": [
+            "tornozelos",
+            "pés"
+        ],
+        "instructions": [
+            "Fique de pé com os pés afastados na largura dos quadris e coloque a faixa na bola do seu pé esquerdo.",
+            "Segure um objeto estável para equilíbrio, se necessário.",
+            "Levante lentamente o calcanhar esquerdo do chão, levantando o peso do corpo na bola do pé.",
+            "Faça uma pausa por um momento no topo, depois abaixe lentamente o calcanhar esquerdo de volta à posição inicial.",
+            "Repita pelo número desejado de repetições, depois mude para a perna direita."
+        ]
+    },
+    {
+        "bodypart": "parte inferior das pernas",
+        "equipment": "faixa",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2F1000.gif?alt=media&token=13fa8ba5-1b4b-43db-86bf-cb6e8e52ea4e",
+        "imgUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2F1000.jpeg?alt=media&token=45ac8ac9-f988-4341-8307-7a9b8662d43e",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoPanturrilha.png?alt=media&token=8a1df05d-98c6-4261-bfbb-1ce52e84471e",
+        "id": "1000",
+        "name": "levantamento reverso de panturrilha com faixa em uma perna",
+        "target": "Panturrilhas",
+        "secondaryMuscles": [
+            "isquiotibiais",
+            "glúteos"
+        ],
+        "instructions": [
+            "Fique de pé com os pés afastados na largura dos quadris e coloque a faixa na bola do seu pé.",
+            "Segure um objeto estável para equilíbrio.",
+            "Levante lentamente o calcanhar do chão, levantando o peso do corpo na bola do pé.",
+            "Faça uma pausa por um momento no topo, depois abaixe lentamente o calcanhar de volta à posição inicial.",
+            "Repita pelo número desejado de repetições, depois mude para a outra perna."
+        ]
+    },
+    {
+        "bodyPart": "ombros",
+        "equipment": "faixa",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2FOmbro0977.gif?alt=media&token=6a2e1b61-3189-48c1-8777-d7a4ad08b14f",
+        "imgUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FOmbro0977.jpg?alt=media&token=dde99c0a-e15c-4ed1-86ba-bdd481f5a897",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoDeltoide.jpg?alt=media&token=68bc3780-c6d4-4cf0-bfcb-e3bfdfedbde9",
+        "id": "0977",
+        "name": "elevação lateral frontal com faixa",
+        "target": "deltoide",
+        "secondaryMuscles": [
+            "trapézio",
+            "parte superior das costas"
+        ],
+        "instructions": [
+            "Fique em pé com os pés à largura dos ombros e segure a faixa na frente das coxas com as palmas voltadas para baixo.",
+            "Mantenha os braços retos e levante a faixa na sua frente até que seus braços estejam paralelos ao chão.",
+            "Faça uma pausa por um momento no topo, depois abaixe lentamente a faixa de volta à posição inicial.",
+            "Repita para o número desejado de repetições."
+        ]
+    },
+    {
+        "bodyPart": "ombros",
+        "equipment": "faixa",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2FOmbro0978.gif?alt=media&token=c33940a5-d268-432f-8048-cdd3440ad487",
+        "imgUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FOmbro0978.jpg?alt=media&token=e4d7ca04-f68d-4eba-9760-0f17df04e294",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoDeltoide.jpg?alt=media&token=68bc3780-c6d4-4cf0-bfcb-e3bfdfedbde9",
+        "id": "0978",
+        "name": "levantamento frontal com faixa",
+        "target": "deltoide",
+        "secondaryMuscles": [
+            "tríceps",
+            "parte superior das costas"
+        ],
+        "instructions": [
+            "Fique em pé com os pés à largura dos ombros e segure a faixa na frente das coxas com as palmas voltadas para baixo.",
+            "Mantenha os braços retos e levante-os lentamente para a frente até que estejam paralelos ao chão.",
+            "Faça uma pausa por um momento no topo, depois abaixe lentamente os braços de volta à posição inicial.",
+            "Repita para o número desejado de repetições."
+        ]
+    },
+    {
+        "bodyPart": "ombros",
+        "equipment": "faixa",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2FOmbro0993.gif?alt=media&token=2e0695a1-e1ab-4536-a931-3de3a46b51e4",
+        "imgUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FOmbro0993.jpg?alt=media&token=285c5ec3-eb1b-487c-b8e0-08f5c078c4f2",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoDeltoide.jpg?alt=media&token=68bc3780-c6d4-4cf0-bfcb-e3bfdfedbde9",
+        "id": "0993",
+        "name": "voo reverso com faixa",
+        "target": "deltoide",
+        "secondaryMuscles": [
+            "parte superior das costas",
+            "trapézio"
+        ],
+        "instructions": [
+            "Prenda a faixa a um objeto estacionário na altura do peito.",
+            "Fique em pé com os pés à largura dos ombros e segure a faixa com as duas mãos à sua frente.",
+            "Mantenha os braços retos e levante-os para os lados até que estejam paralelos ao chão.",
+            "Aperte as omoplatas juntas no topo do movimento.",
+            "Abaixe lentamente os braços de volta à posição inicial.",
+            "Repita para o número desejado de repetições."
+        ]
+    },
+    {
+        "bodyPart": "ombros",
+        "equipment": "faixa",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2FOmbro0997.gif?alt=media&token=b3bcb1b6-9c99-47e9-9297-ca69d532a6eb",
+        "imgUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FOmbro0997.jpg?alt=media&token=337d1282-6042-43e2-b6e3-2482ba9b44fd",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoDeltoide.jpg?alt=media&token=68bc3780-c6d4-4cf0-bfcb-e3bfdfedbde9",
+        "id": "0997",
+        "name": "pressão de ombro com faixa",
+        "target": "deltoide",
+        "secondaryMuscles": [
+            "tríceps",
+            "parte superior das costas"
+        ],
+        "instructions": [
+            "Fique em pé com os pés à largura dos ombros e coloque a faixa sob seus pés.",
+            "Segure a faixa com as palmas voltadas para a frente e levante as mãos até a altura dos ombros, cotovelos dobrados.",
+            "Pressione a faixa acima da cabeça, estendendo completamente os braços.",
+            "Faça uma pausa por um momento no topo, depois abaixe lentamente a faixa de volta à altura do ombro.",
+            "Repita para o número desejado de repetições."
+        ]
+    },
+    {
+        "bodyPart": "peito",
+        "equipment": "peso corporal",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2Fpeito3294.gif?alt=media&token=576a74e7-72c2-4133-b599-5d9141231a1d",
+        "imgUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2F3294.jpg?alt=media&token=1be9a2a7-3256-4970-a441-b9038f716522",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoPeitoral.jpg?alt=media&token=0f30949e-9c57-49dd-9e65-7cdc315a1135",
+        "id": "3294",
+        "name": "flexão do arqueiro",
+        "target": "peitorais",
+        "secondaryMuscles": [
+            "tríceps",
+            "ombros"
+        ],
+        "instructions": [
+            "Comece na posição de flexão com as mãos ligeiramente mais afastadas do que a largura dos ombros.",
+            "Estenda um braço reto para o lado, paralelo ao chão.",
+            "Abaixe o corpo dobrando os cotovelos, mantendo as costas retas e o core contraído.",
+            "Empurre de volta para a posição inicial.",
+            "Repita do outro lado, estendendo o braço oposto para o lado.",
+            "Continue alternando os lados para o número desejado de repetições."
+        ]
+    },
+    {
+        "bodyPart": "peito",
+        "equipment": "máquina de alavancagem",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2Fpeito0009.gif?alt=media&token=19c92847-ba35-431d-94b3-a31cfd518d65",
+        "imgUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2F0009.jpg?alt=media&token=792734b3-a5fc-4fce-b1e0-abb70294b14c",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoPeitoral.jpg?alt=media&token=0f30949e-9c57-49dd-9e65-7cdc315a1135",
+        "id": "0009",
+        "name": "mergulho assistido para peito (ajoelhado)",
+        "target": "peitorais",
+        "secondaryMuscles": [
+            "tríceps",
+            "ombros"
+        ],
+        "instructions": [
+            "Ajuste a máquina para a altura desejada e coloque seus joelhos na almofada.",
+            "Segure as alças com as palmas das mãos voltadas para baixo e os braços totalmente estendidos.",
+            "Abaixe o corpo dobrando os cotovelos até que os braços fiquem paralelos ao chão.",
+            "Faça uma pausa por um momento, depois empurre-se de volta para a posição inicial.",
+            "Repita para o número desejado de repetições."
+        ]
+    },  
+    {
+        "bodypart": "peito",
+        "equipment": "assistido",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2Fpeito1716.gif?alt=media&token=a2a39994-8c78-4c10-8e75-d765d2959ffa",
+        "imgUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2F1716.jpg?alt=media&token=84cdb0eb-9d19-4c5b-9f99-ec7f49bad1f0",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoPeitoral.jpg?alt=media&token=0f30949e-9c57-49dd-9e65-7cdc315a1135",
+        "id": "1716",
+        "name": "alongamento assistido do peitoral maior sentado com bola de estabilidade",
+        "target": "peitorais",
+        "secondaryMuscles": [
+            "ombros",
+            "tríceps"
+        ],
+        "instructions": [
+            "Sente-se em uma bola de estabilidade com os pés planos no chão e as costas retas.",
+            "Segure a bola de estabilidade com ambas as mãos e estenda os braços diretamente à sua frente.",
+            "Abaixe lentamente a bola de estabilidade em direção ao peito, sentindo o alongamento nos músculos peitorais.",
+            "Mantenha o alongamento por alguns segundos e, em seguida, volte lentamente à posição inicial.",
+            "Repita para o número desejado de repetições."
+        ]
+    },
+    {
+        "bodypart": "peito",
+        "equipment": "máquina de alavancagem",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FgifAtividades%2Fpeito2364.gif?alt=media&token=b987a506-c662-4b16-a2b1-823604fc7f70",
+        "imgUrl": "https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2F2364.jpg?alt=media&token=3c349120-8e08-4b9f-81ee-2be9eeada146",
+        "bgUrl":"https://firebasestorage.googleapis.com/v0/b/uplife-f9bce.appspot.com/o/atividadesImages%2FimgFundoPeitoral.jpg?alt=media&token=0f30949e-9c57-49dd-9e65-7cdc315a1135",
+        "id": "2364",
+        "name": "mergulho para peito com pegada larga",
+        "target": "peitorais",
+        "secondaryMuscles": [
+            "tríceps",
+            "ombros"
+        ],
+        "instructions": [
+            "Ajuste a máquina para a altura desejada e coloque seus joelhos na almofada.",
+            "Segure as alças com uma pegada larga e mantenha os cotovelos levemente dobrados.",
+            "Abaixe o corpo dobrando os cotovelos até que os braços superiores fiquem paralelos ao chão.",
+            "Empurre-se de volta para a posição inicial estendendo os braços.",
+            "Repita para o número desejado de repetições."
+        ]
+    } 
+]

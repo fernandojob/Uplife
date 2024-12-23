@@ -1,0 +1,103 @@
+<ion-content>
+
+  <!-- Café Da Manhã -->
+  <ion-accordion-group expand="inset">
+    <ion-accordion>
+      <ion-item slot="header" color="light">
+        <ion-thumbnail slot="start">
+          <ion-icon name="cafe" class="cafe"></ion-icon>
+        </ion-thumbnail>
+        <ion-label>Café Da Manhã</ion-label>
+        <ion-icon (click)="abrirAlerta('Café Da Manhã')" name="add" class="green-plus"></ion-icon>
+      </ion-item>
+      <div class="ion-padding" slot="content" id="content-cafe-da-manha">
+        <!-- Conteúdo do acordeão -->
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <!-- Almoço -->
+  <ion-accordion-group expand="inset">
+    <ion-accordion>
+      <ion-item slot="header" color="light">
+        <ion-thumbnail slot="start">
+          <ion-icon name="sunny" class="sunny"></ion-icon>
+        </ion-thumbnail>
+        <ion-label>Almoço</ion-label>
+        <ion-icon (click)="abrirAlerta('Almoço')" name="add" class="green-plus"></ion-icon>
+      </ion-item>
+      <div class="ion-padding" slot="content" id="content-almoco">
+        <!-- Conteúdo do acordeão -->
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <!-- Jantar -->
+  <ion-accordion-group expand="inset">
+    <ion-accordion>
+      <ion-item slot="header" color="light">
+        <ion-thumbnail slot="start">
+          <ion-icon name="moon" class="moon"></ion-icon>
+        </ion-thumbnail>
+        <ion-label>Jantar</ion-label>
+        <ion-icon (click)="abrirAlerta('Jantar')" name="add" class="green-plus"></ion-icon>
+      </ion-item>
+      <div class="ion-padding" slot="content" id="content-jantar">
+        <!-- Conteúdo do acordeão -->
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <!-- Lanches/Outros -->
+  <ion-accordion-group expand="inset">
+    <ion-accordion>
+      <ion-item slot="header" color="light">
+        <ion-thumbnail slot="start">
+          <ion-icon name="nutrition" class="nutrition"></ion-icon>
+        </ion-thumbnail>
+        <ion-label>Lanches/Outros</ion-label>
+        <ion-icon (click)="abrirAlerta('Lanches/Outros')" name="add" class="green-plus"></ion-icon>
+      </ion-item>
+      <div class="ion-padding" slot="content" id="content-lanchesoutros">
+        <!-- Conteúdo do acordeão -->
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+
+  <ion-accordion-group expand="inset">
+    <ion-accordion>
+      <ion-item slot="header" color="light">
+        <ion-thumbnail slot="start">
+          <ion-icon name="water" class="water"></ion-icon>
+        </ion-thumbnail>
+        <ion-label>Contador de Água</ion-label>
+        <ion-label id="quantidadeAgua">{{ quantidadeAguaConsumida }} ml de 2500 ml</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content" id="content-agua">
+        <!-- Conteúdo do acordeão -->
+        <div class="copo-container">
+          <div class="copo-item">
+            <ion-icon name="pint" class="copo"></ion-icon>
+            <ion-button expand="block" size="small" class="btn-mil ml-1" (click)="adicionarAgua(250)">+250ML</ion-button>
+          </div>
+          <div class="copo-item">
+            <ion-icon name="pint" class="copo"></ion-icon>
+            <ion-button expand="block" size="small" class="btn-mil ml-2" (click)="adicionarAgua(500)">+500ML</ion-button>
+          </div>
+          <div class="copo-item">
+            <ion-icon name="pint" class="copo"></ion-icon>
+            <ion-button expand="block" size="small" class="btn-mil ml-3" (click)="adicionarAgua(750)">+750ML</ion-button>
+          </div>
+          <div class="copo-item">
+            <ion-icon name="pint" class="copo"></ion-icon>
+            <ion-button expand="block" size="small" class="btn-mil ml-4" (click)="adicionarAgua(1000)">+1 Litro</ion-button>
+          </div>
+        </div>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+  
+  
+  
+</ion-content>

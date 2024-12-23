@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-item>
+    
+    <ion-button fill="clear" class="icon" (click)="Voltarpagina()">
+      <ion-icon name="arrow-back-sharp"></ion-icon>
+    </ion-button>
+    
+    <ion-title class="titulo">Login</ion-title>
+
+    <ion-button fill="clear" class="icon" disabled>
+      <ion-icon name="add-sharp" class="oculto"></ion-icon>
+    </ion-button>
+
+  </ion-item>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid class="main">
+
+    <form class="formulario" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+      <ion-col>
+        <ion-title class="titulo">Email</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-input type="text" fill="outline" formControlName="email" placeholder="Seu email"></ion-input>
+
+        <ion-label *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)">
+          <p class="erro" *ngIf="loginForm.controls['email'].errors?.['required']">Email é obrigatório.</p>
+        </ion-label>
+
+        <ion-label *ngIf="errorMessage">
+          <p class="erro">{{ errorMessage }}</p>
+        </ion-label>
+        
+      </ion-col>
+
+      <ion-col>
+        <ion-title class="titulo">Senha</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-input type="password" fill="outline" formControlName="senha" placeholder="Senha">
+          <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+        </ion-input>
+
+        <ion-label *ngIf="loginForm.controls['senha'].invalid && (loginForm.controls['senha'].dirty || loginForm.controls['senha'].touched)">
+          <p class="erro" *ngIf="loginForm.controls['senha'].errors?.['required']">Senha é obrigatória.</p>
+        </ion-label>
+
+        <ion-label *ngIf="errorMessage">
+          <p class="erro">{{ errorMessage }}</p>
+        </ion-label>
+        
+      </ion-col>
+
+      <ion-col class="switch">
+        <ion-toggle formControlName="manter">Manter login</ion-toggle>
+      </ion-col>
+
+      <ion-col class="botoes">
+        <ion-button type="submit">Entrar</ion-button>
+        <ion-button (click)="irParaRegistro()">Criar Nova Conta</ion-button>
+        <ion-button (click)="irParaEsqueciSenha()">Esqueci Minha Senha</ion-button>
+      </ion-col>
+    </form>
+    
+  </ion-grid>
+  
+</ion-content>

@@ -1,0 +1,129 @@
+<ion-header>
+  <ion-item>
+    
+    <ion-button fill="clear" class="icon" (click)="Voltarpagina()">
+      <ion-icon name="arrow-back-sharp"></ion-icon>
+    </ion-button>
+    
+    <ion-title class="titulo">Mais informações</ion-title>
+
+    <ion-button fill="clear" class="icon" disabled>
+      <ion-icon name="add-sharp" class="oculto"></ion-icon>
+    </ion-button>
+
+  </ion-item>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid class="formTitle">
+    <ion-title class="titulo">Precisamos de mais <br/> algumas informações</ion-title>
+  </ion-grid>
+
+  <ion-grid class="main">
+
+    <form class="formulario" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+      <ion-col>
+        <ion-title class="titulo">Data de nascimento</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-input type="date" fill="outline" formControlName="DTnascimento"></ion-input>
+
+        <ion-label *ngIf="userForm.controls['DTnascimento'].invalid && (userForm.controls['DTnascimento'].dirty || userForm.controls['DTnascimento'].touched)">
+          <p class="erro" *ngIf="userForm.controls['DTnascimento'].errors?.['required']">Data de nascimento é obrigatória.</p>
+        </ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-title class="titulo">Sexo</ion-title>
+      </ion-col>
+
+      <ion-item class="opcoes">
+
+        <ion-radio-group value="sexo" formControlName="sexo">
+          <ion-radio labelPlacement="end" justify="start" value="masculino">Masculino</ion-radio> <br/>
+          <ion-radio labelPlacement="end" justify="start" value="feminino">Feminino</ion-radio> <br/>
+        </ion-radio-group>
+
+      </ion-item>
+
+      <ion-col>
+        <ion-label *ngIf="userForm.controls['sexo'].invalid && (userForm.controls['sexo'].dirty || userForm.controls['sexo'].touched)">
+          <p class="erro" *ngIf="userForm.controls['sexo'].errors?.['required']">Sexo é obrigatório.</p>
+        </ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-title class="titulo">Altura</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-input type="number" fill="outline" formControlName="altura" placeholder="Altura | M"></ion-input>
+
+        <ion-label *ngIf="userForm.controls['altura'].invalid && (userForm.controls['altura'].dirty || userForm.controls['altura'].touched)">
+          <p class="erro" *ngIf="userForm.controls['altura'].errors?.['required']">Altura é obrigatória.</p>
+        </ion-label>
+      </ion-col>  
+
+      <ion-col>
+        <ion-title class="titulo">Peso</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-input type="number" fill="outline" formControlName="peso" placeholder="Peso | Kg"></ion-input>
+
+        <ion-label *ngIf="userForm.controls['peso'].invalid && (userForm.controls['peso'].dirty || userForm.controls['peso'].touched)">
+          <p class="erro" *ngIf="userForm.controls['peso'].errors?.['required']">Peso é obrigatório.</p>
+        </ion-label>
+      </ion-col>      
+
+      <ion-col>
+        <ion-title class="titulo">Atividades</ion-title>
+      </ion-col>
+
+      <ion-item class="opcoes">
+
+        <ion-radio-group value="atividade" formControlName="atividade">
+          <ion-radio labelPlacement="end" justify="start" value="sedentario">Sedentário</ion-radio> <br/>
+          <ion-radio labelPlacement="end" justify="start" value="moderadamenteAtivo">Moderadamente ativo</ion-radio> <br/>
+          <ion-radio labelPlacement="end" justify="start" value="extremamenteAtivo">Extremamente ativo</ion-radio> <br/>
+        </ion-radio-group>
+
+      </ion-item>
+
+      <ion-col>
+        <ion-label *ngIf="userForm.controls['atividade'].invalid && (userForm.controls['atividade'].dirty || userForm.controls['atividade'].touched)">
+          <p class="erro" *ngIf="userForm.controls['atividade'].errors?.['required']">Atividades é obrigatório.</p>
+        </ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-title class="titulo">Objetivo</ion-title>
+      </ion-col>
+
+      <ion-item class="opcoes">
+
+        <ion-radio-group value="objetivo" formControlName="objetivo">
+          <ion-radio labelPlacement="end" justify="start" value="perderPeso">Perder peso</ion-radio> <br/>
+          <ion-radio labelPlacement="end" justify="start" value="manterPeso">Manter peso</ion-radio> <br/>
+          <ion-radio labelPlacement="end" justify="start" value="ganharPeso">Ganhar peso</ion-radio> <br/>
+        </ion-radio-group>
+
+      </ion-item>
+
+      <ion-col>
+        <ion-label *ngIf="userForm.controls['objetivo'].invalid && (userForm.controls['objetivo'].dirty || userForm.controls['objetivo'].touched)">
+          <p class="erro" *ngIf="userForm.controls['objetivo'].errors?.['required']">Objetivo é obrigatório.</p>
+        </ion-label>
+      </ion-col>
+
+      <ion-col class="botoes">
+        <ion-button type="submit">Criar conta</ion-button>
+      </ion-col>
+    </form>
+    
+  </ion-grid>
+  
+</ion-content>

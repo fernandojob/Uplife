@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-item>
+      
+    <ion-button fill="clear" class="icon" (click)="Voltarpagina()">
+      <ion-icon name="arrow-back-sharp"></ion-icon>
+    </ion-button>
+    
+    <ion-title class="titulo">Configurações</ion-title>
+
+    <ion-button fill="clear" class="icon" disabled>
+      <ion-icon name="add-sharp" class="oculto"></ion-icon>
+    </ion-button>
+
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <ion-grid >
+    <ion-col class="avatar">
+      <ion-avatar (click)="alterarFoto()">
+        <img alt="Foto de perfil" [src]="fotoperfil" />
+      </ion-avatar>
+      <br/>
+      <ion-title>{{ nomeUsuario }}</ion-title>
+      <input type="file" accept="image/*" #fileInput (change)="onFileSelected($event)" hidden>
+    </ion-col>
+    
+    <ion-col>
+      <ion-button expand="full" (click)="IrparaEditarConta()">Editar conta</ion-button>
+    </ion-col>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-col>
+      <ion-title class="titulo">Corrida</ion-title>
+    </ion-col>
+    
+    <ion-col>
+      <ion-button expand="full" (click)="IrparaConfigCorrida()">Configurações de corrida</ion-button>
+    </ion-col>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-col>
+      <ion-title class="titulo">Ações</ion-title>
+    </ion-col>
+
+    <ion-col>
+      <ion-button expand="full" (click)="deletarConta()">Apagar conta</ion-button>
+      <ion-button expand="full" (click)="sairConta()">Sair</ion-button>
+    </ion-col>
+  </ion-grid>
+
+</ion-content>

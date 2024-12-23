@@ -1,0 +1,166 @@
+<ion-header>
+  <ion-item>
+
+    <ion-button fill="clear" class="icon" (click)="Voltarpagina()">
+      <ion-icon name="arrow-back-sharp"></ion-icon>
+    </ion-button>
+
+    <ion-title class="titulo">Configurações de Corrida</ion-title>
+
+    <ion-button fill="clear" class="icon" disabled>
+      <ion-icon name="add-sharp" class="oculto"></ion-icon>
+    </ion-button>
+
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <div class="espaco">
+
+    <div class="main">
+
+      <div class="grid">
+
+        <ion-title class="tituloSessao">Modo de corrida</ion-title>
+
+        <div class="sessao">
+
+          <div class="opcao">
+
+            <div class="tituloOpcao">
+              <ion-title>Pausa automático</ion-title>
+            </div>
+
+            <div class="conteudoOpcao">
+              <ion-toggle [(ngModel)]="configuracoes.pausaAutomatica" id="pausaAutomatica">Pausa automático</ion-toggle>
+            </div>
+
+          </div>
+
+          <div class="opcao">
+
+            <div class="tituloOpcao">
+              <ion-title>Contagem regressiva</ion-title>
+            </div>
+
+            <div class="conteudoOpcao">
+              <ion-radio-group [(ngModel)]="configuracoes.contagemRegressiva" id="teste">
+                <ion-radio labelPlacement="end" justify="start" value="desativada">Desativada</ion-radio> <br/>
+                <ion-radio labelPlacement="end" justify="start" value="3">3 segundos</ion-radio> <br/>
+                <ion-radio labelPlacement="end" justify="start" value="6">6 segundos</ion-radio> <br/>
+                <ion-radio labelPlacement="end" justify="start" value="9">9 segundos</ion-radio> <br/>
+              </ion-radio-group>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="grid">
+
+        <ion-title class="tituloSessao">Áudio</ion-title>
+
+        <div class="sessao">
+
+          <div class="opcao">
+
+            <div class="tituloOpcao">
+              <ion-title>Feedback de áudio</ion-title>
+            </div>
+
+            <div class="conteudoOpcao">
+
+              <div class="tipoVoz">
+                <ion-radio-group [(ngModel)]="configuracoes.tipoVoz">
+                  <ion-radio justify="space-between" value="ativado">Ativado</ion-radio> <br/>
+                  <ion-radio justify="space-between" value="desativado">Desativado</ion-radio> <br/>
+                </ion-radio-group>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="opcao">
+
+            <div class="tituloOpcao">
+              <ion-title>Frequência de áudio</ion-title>
+            </div>
+
+            <div class="frequencia">
+              <ion-select [(ngModel)]="configuracoes.frequenciaAudio" label="Frequência de Comentários" fill="outline" cancel-text="Cancelar">
+                <ion-select-option value="1km">1 Km</ion-select-option>
+                <ion-select-option value="2km">2 Km</ion-select-option>
+                <ion-select-option value="1min">1 Minuto</ion-select-option>
+                <ion-select-option value="5min">5 Minutos</ion-select-option>
+                <ion-select-option value="10min">10 Minutos</ion-select-option>
+                <ion-select-option value="15min">15 Minutos</ion-select-option>
+              </ion-select>
+            </div>
+
+            <div class="conteudoOpcao">
+
+              <div>
+                <ion-title class="subTitulo">Comentários</ion-title>
+              </div>
+
+              <div class="comentarios">
+                <ion-toggle [(ngModel)]="configuracoes.duracaoComentario" justify="space-between">Duração</ion-toggle>
+                <ion-toggle [(ngModel)]="configuracoes.distanciaComentario" justify="space-between">Distância</ion-toggle>
+                <ion-toggle [(ngModel)]="configuracoes.ritmoComentario" justify="space-between">Ritmo médio</ion-toggle>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+      <div class="grid">
+
+        <ion-title class="tituloSessao">Marcadores</ion-title>
+
+        <div class="sessao">
+
+          <div class="opcao">
+
+            <div class="tituloOpcao">
+              <ion-title>Medidor</ion-title>
+            </div>
+
+            <div class="conteudoOpcao" id="medicao">
+              <ion-select [(ngModel)]="configuracoes.medidor" (ionChange)="atualizarPlaceholder()" cancel-text="Cancelar" placeholder="Marcador" fill="clear" interface="action-sheet">
+                <ion-select-option value="nenhum">Nenhum</ion-select-option>
+                <ion-select-option value="distancia">Distância</ion-select-option>
+                <ion-select-option value="duracao">Duração</ion-select-option>
+              </ion-select>
+            </div>
+
+          </div>
+
+          <div class="opcao">
+
+            <div class="tituloOpcao">
+              <ion-title>Meta {{parametro}}</ion-title>
+            </div>
+
+            <div class="conteudoOpcao">
+              <ion-input [(ngModel)]="configuracoes.meta" type="text" fill="outline" [placeholder]="placeholderMeta" [disabled]="configuracoes.medidor === 'nenhum'" ></ion-input>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <ion-button (click)="salvar()" id="salvar">Salvar Configurações</ion-button>
+
+    </div>
+
+  </div>
+</ion-content>

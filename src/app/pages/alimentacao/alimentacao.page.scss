@@ -1,0 +1,57 @@
+  .cafe {
+    font-size: 45px;
+    color: white;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .sunny {
+    font-size: 45px;
+    color: yellow;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .moon {
+    font-size: 45px;
+    color: #6e5090;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .nutrition {
+    font-size: 45px;
+    color: #7ab000;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  // .ion-padding {
+  //   background-color: #222428;
+  // }
+
+.green-plus{
+    color: #00ff00; /* Isso define a cor do ícone para verde */
+    font-size: 25px; /* Ajuste o tamanho conforme necessário */
+  }
+
+.water{
+  font-size: 45px;
+  color: #1ca3ec;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.copo{
+  font-size: 45px;
+  color: #1ca3ec;
+  align-items: center;
+  margin-top: 8px;
+  justify-content: space-between;
+  
+}
+
+.copo-container {
+  display: flex;
+  justify-content: space-between;
+}

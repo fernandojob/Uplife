@@ -1,0 +1,7 @@
+{
+  "name": "UpLife",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

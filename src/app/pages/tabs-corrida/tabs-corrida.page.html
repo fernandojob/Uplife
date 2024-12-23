@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-item> 
+    <ion-button fill="clear" class="icon" (click)="IrparaConfig()">
+      <ion-avatar>
+        <img alt="Foto de perfil" [src]="fotoperfil" />
+      </ion-avatar>
+    </ion-button>
+    
+    <ion-title class="titulo">Corrida</ion-title>
+
+    <ion-button fill="clear" class="icon" disabled>
+      <ion-icon name="add-sharp" class="oculto"></ion-icon>
+    </ion-button>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="corrida">
+        <ion-label>Início</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="historico">
+        <ion-label>Histórico</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>
+

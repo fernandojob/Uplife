@@ -1,0 +1,60 @@
+.icon{
+    font-size: 24px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.oculto{
+    color: transparent;
+}
+
+.mensagem{
+    text-align: center;
+}
+
+.teste{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lado{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.confirmarModal{
+    --height: 25%;
+    --border-radius: 20px;
+    width: auto;
+    padding: 0 20px 0 20px;
+}
+
+.confirmarButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 5px 20px 5px;
+}
+
+.ladoModal{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ladoModal ion-button{
+    width: 100%;
+}
